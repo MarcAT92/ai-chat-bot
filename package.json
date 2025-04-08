@@ -4,7 +4,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist"
+    "build": "bun build src/index.ts --outdir dist && cp -r public dist/",
+    "deploy": "netlify deploy --prod"
   },
   "dependencies": {
     "@elysiajs/html": "^1.2.0",
