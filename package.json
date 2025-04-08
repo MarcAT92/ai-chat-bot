@@ -3,7 +3,8 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bun run --watch src/index.ts"
+    "start": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --outdir dist"
   },
   "dependencies": {
     "@elysiajs/html": "^1.2.0",
@@ -13,7 +14,8 @@
     "elysia": "latest"
   },
   "devDependencies": {
-    "bun-types": "latest"
+    "bun-types": "latest",
+    "netlify-cli": "^17.10.1"
   },
   "module": "src/index.js"
 }
