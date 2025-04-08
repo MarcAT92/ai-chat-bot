@@ -30,7 +30,11 @@ async function sendMessage(event) {
   input.value = "";
 
   try {
-    const response = await fetch("/api/chat", {
+    // Update the fetch URL from:
+    // const response = await fetch("/api/chat", {
+    
+    // To:
+    const response = await fetch("/.netlify/functions/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
