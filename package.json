@@ -3,9 +3,7 @@
   "version": "1.0.50",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "bun run --watch src/index.ts",
-    "build": "bun build src/index.ts --outdir dist && xcopy /E /I public dist\\public",
-    "deploy": "netlify deploy --prod"
+    "start": "bun run --watch src/index.ts"
   },
   "dependencies": {
     "@elysiajs/html": "^1.2.0",
